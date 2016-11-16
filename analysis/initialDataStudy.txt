@@ -1,0 +1,41 @@
+Initial Data Study
+Description: Contains my initial study of the data
+Last Updated: 11/15/2016 5:36 PM
+-Description of the dataset on the website:
+    --https://offshoreleaks.icij.org/pages/database
+    --This database contains information on almost 500,000 offshore entities 
+        that are part of the Panama Papers, the Offshore Leaks and the Bahamas 
+        Leaks investigations. The data covers nearly 40 years – from 1977 
+        through to early 2016 – and links to people and companies in more than 
+        200 countries and territories.
+    --Data comes from three leaks: The Offshore Leaks (2013), The Panama Papers
+        (April 2016), and the Bahamas Leaks (September 2016)
+    --Currency:
+        ---The Offshore Leaks is current through 2010, the Panama Papers are
+            current through 2015, and the Bahamas Leaks are current through
+            early 2016.
+    --Not everyone in the database has committed a crime, but this does expose
+        potential dealings that could be criminal in nature, depending on the
+        country
+    --"The information contained in the ICIJ Offshore Leaks Database is just a 
+        fraction of the leaked files of the Panama Papers, the Offshore Leaks 
+        and the Bahamas Leaks investigations"
+    --Definitions: https://offshoreleaks.icij.org/pages/about#terms_definition
+    --Originally created in a graph database
+    --Dataset is licensed under ODbl v1.0 
+        (http://opendatacommons.org/licenses/odbl/1.0/) and contents under cc
+        (https://creativecommons.org/licenses/by-sa/3.0/)
+    --For questions, email data@icij.org
+    --ICIJ is a project by the Center for Public Integrity, a non-profit
+        organization
+    --Data Sources:
+        ---History of data collection: https://offshoreleaks.icij.org/pages/data
+        ---The database only features a fraction of the Panama Papers, which
+            amounted to about 2.6TB (or 11.5 million files) in the raw file
+            transfer
+        ---"From the 1.3 million files received as part of the Bahamas Leaks 
+            investigation, the database was expanded to include the names of 
+            directors and some owners of more than 175,000 Bahamian companies,
+            trusts and foundations."
+    --How to use the database:
+        ---https://offshoreleaks.icij.org/pages/howtouse
