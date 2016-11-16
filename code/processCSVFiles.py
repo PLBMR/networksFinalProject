@@ -16,19 +16,33 @@ def getEdgesAndEntityFilenames(csvDir):
     for filename in os.listdir(csvDir):
         if ("edge" in filename.lower()): #make this our edge filename
             edgeFilename = csvDir + os.sep + filename
-        else:
+        elif ("ignore" not in filename.lower()):
             entityFilenameList.append(csvDir + os.sep + filename)
     return (edgeFilename,entityFilenameList)
 
 def addEntities(givenNet,entityFilename):
     #helper that adds entities to the given network
     entityFrame = pd.read_csv(entityFilename)
+    entityFrame = entityFrame[(entityFrame["country_codes"] == "UKR") |
+                              (entityFrame["country_codes"] == "RUS") |
+                              (entityFrame["country_codes"] == "POL") |
+                              (entityFrame["country_codes"] == "PAN") |
+                              (entityFrame["country_codes"] == "BHS")]
+    #get entity type
+    entityFileList = entityFilename.split(os.sep)
+    entityType = entityFileList[len(entityFileList) - 1]
+    entityType = entityType[0:(len(entityType) - len(".csv"))]
+    #then transfer node list
     nodeIDList = list(entityFrame["node_id"])
-    givenNet.add_nodes_from(nodeIDList)
+    print len(nodeIDList)
+    givenNet.add_nodes_from(nodeIDList,entType = entityType)
 
 def addEdges(givenNet,edgeFilename):
     #helper that adds edges to given network
     edgeFrame = pd.read_csv(edgeFilename)
+    edgeFrame = edgeFrame[(edgeFrame["node_1"].isin(givenNet.nodes())) &
+                          (edgeFrame["node_2"].isin(givenNet.nodes()))]
+    print edgeFrame.shape
     #then get nodes
     getEdgeTup = lambda s : (s["node_1"],s["node_2"])
     edgeTupleList = list(edgeFrame.apply(getEdgeTup,axis = 1))
@@ -51,5 +65,5 @@ def buildNetwork(csvDir,exportFilename):
 if __name__ == "__main__":
     #get entity name list
     csvDir = "../data/raw/csvFiles"
-    exportFilename = "../data/processed/fullNetwork.gml"
+    exportFilename = "../data/processed/easternEuropeNetwork.gml"
     buildNetwork(csvDir,exportFilename)
