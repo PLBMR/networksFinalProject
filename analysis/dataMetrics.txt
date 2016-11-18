@@ -1,0 +1,21 @@
+Data Metrics
+Description: Holds metrics for some of the datasets I have generated
+Last Updated: 11/18/2016 3:53 PM
+-../data/processed/easternEuropeNetworks
+    --Description: Contains all nodes and edges among entities, addresses,
+        officers, and intermediaries associated with Panama, The Bahamas,
+        Ukraine, Poland, and Russia.
+    --# Nodes: 51336
+    --# Edges: 39120
+    --Average Degree: 1.524 (Average In-Degree = Average Out-Degree = 0.762)
+    --Country Distribution:
+        ---PAN: 47.66%
+        ---RUS: 31.48%
+        ---BHS: 17.06%
+        ---UKR: 2.91%
+        ---POL: 0.88%
+    --Network Diameter: 8
+    --Average Path Length: 2.088
+    --# Weakly Connected Components: 16666
+    --Average Clustering Coefficient: 0.015
+    --
