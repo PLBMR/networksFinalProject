@@ -14,8 +14,13 @@ Last Updated: 11/18/2016 3:53 PM
         ---BHS: 17.06%
         ---UKR: 2.91%
         ---POL: 0.88%
+    --Type Distribution:
+        ---Entitites: 49.63%
+        ---Officers: 27.33%
+        ---Addresses: 20.35%
+        ---Intermediaries: 2.69%
     --Network Diameter: 8
     --Average Path Length: 2.088
     --# Weakly Connected Components: 16666
     --Average Clustering Coefficient: 0.015
-    --
+

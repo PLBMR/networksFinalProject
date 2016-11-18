@@ -20,6 +20,13 @@ def getEdgesAndEntityFilenames(csvDir):
             entityFilenameList.append(csvDir + os.sep + filename)
     return (edgeFilename,entityFilenameList)
 
+def createNode(nodeRow):
+    #helper that creates information for given node row
+    nodeID = nodeRow["node_id"]
+    nodeDict = dict(zip(list(nodeRow.index),list(nodeRow)))
+    nodeDict = {"countryCode" : nodeDict["country_codes"]}
+    return (nodeID,nodeDict)
+
 def addEntities(givenNet,entityFilename):
     #helper that adds entities to the given network
     entityFrame = pd.read_csv(entityFilename)
@@ -33,8 +40,7 @@ def addEntities(givenNet,entityFilename):
     entityType = entityFileList[len(entityFileList) - 1]
     entityType = entityType[0:(len(entityType) - len(".csv"))]
     #then transfer node list
-    nodeIDList = list(entityFrame["node_id"])
-    print len(nodeIDList)
+    nodeIDList = list(entityFrame.apply(createNode,axis = 1))
     givenNet.add_nodes_from(nodeIDList,entType = entityType)
 
 def addEdges(givenNet,edgeFilename):
