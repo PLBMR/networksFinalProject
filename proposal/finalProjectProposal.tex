@@ -68,7 +68,7 @@
 \end{center}
 
 For my final project, I will be doing an analysis of the Offshore Leaks
-Database. This database shows relationships and networks among people and
+Database. This database shows relationships among people and
 companies in offshore entities that are traditionally designated as ``tax
 havens''. Thus, to some degree, this database provides strong insights into how
 the world's rich conduct offshore business. This database was constructed from
@@ -78,7 +78,7 @@ Bahamas Leak in September 2016.
 
 Due to the size of the original network, I decided to start out my analysis by
 only looking at behaviors within certain tax havens and certain Eastern
-European countries. The visualization I have provided (see Figure 1) Contains
+European countries. The visualization I have provided (see Figure 1) contains
 all agents associated with Russia, Ukraine, Poland, Panama, and The Bahamas and
 all relationships among those agents.
 
@@ -86,12 +86,13 @@ This portion of the dataset contains $51336$ nodes (agents) and $39120$ edges
 (relationships). The distribution of agents across country features $47.66\%$
 from Panama, $31.48\%$ from Russia, $17.06\%$ from the Bahamas, $2.91\%$ from
 Ukraine, and $0.88\%$ from Poland. When we look at the types of agents featured
-in this subnetwork, $49.63\%$ of agents were entities (company created in
-a tax haven), $27.33\%$ (person who plays a role in an entity), $20.35\%$ were
+in this subnetwork, $49.63\%$ of agents were entities (companies created in
+tax havens), $27.33\%$ were officers
+(persons who play roles in given entities), $20.35\%$ were
 addresses (locations associated with agents), and $2.69\%$ were intermediaries
 (go-betweens for entities and officers). Interestingly, despite the very
-small portion of nodes being intermediaries, they play an extremely key role
-in terms of degree in the network (see Figure 1). We see that the average
+small portion of nodes being intermediaries, they tend to have very
+high degree in the network (see Figure 1). We see that the average
 degree in this network is $1.524$, which suggests that this is a relatively
 sparsely connected network. There are $16666$ weakly connected components in
 the network, which suggests to me that to do further meaningful analyses on
@@ -107,23 +108,27 @@ Given the important place of intermediaries in the network, my question is
 ``are these intermediaries gaining social capital in this
 network from brokerage or closure?'' There are two measures that will be
 essential for studying this network. The first is the betweenness centrality
-of intermediaries in the network, which will give me some measure of
-brokerage associated with intermediaries. The second in average link
-embeddedness for intermediaries in the network, which will give me a measure
-of closure associated with intermediaries. I will make comparisons between these
-two measures to study on average which of these are driving the importance of
-intermediaries in this network. I will also make comparison between these
+of intermediaries in the network, which will give me some assessment of
+brokerage associated with intermediaries. The second is the average link
+embeddedness for intermediary links in the network, which will give me a measure
+of closure associated with intermediaries. I will first
+make comparisons between these
 measures for intermediaries and these measures for other agents to ensure that
-the brokerage/closure behavior of the intermediaries are significantly
-different from that of entities and officers. These measures will give me a
+the brokerage/closure behavior of the intermediaries is significantly
+different from that of entities and officers. I will then make a comparison
+between the closure and brokerage measures for intermediaries to study
+which of these two measures is driving the importance of intermediaries in
+the network. These comparisons will give me a
 strong sense as to what kind of social capital intermediaries have in this
 network, and it will provide different policy implications as to how we might
-want to sever gaps between officers and tax-haven entities.
+want to sever paths between officers and tax-haven entities.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 5in]{../analysis/figures/easternEuropeNetwork.png}
-    \caption{Graph of our Eastern Europe network. The nodes are colored by
+    \caption{Graph of our Eastern Europe network. The countries represented
+        in this graph include Russia, Ukraine, Poland, Panama, and The Bahamas.
+        The nodes are colored by
         agent type, where pink is for entities, green is for officers,
         orange is for addresses, and light blue is for intermediaries. Nodes
         are sized by degree.}

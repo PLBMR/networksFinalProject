@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 NOV 2016 13:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 NOV 2016 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -664,7 +664,7 @@ File: ../analysis/figures/easternEuropeNetwork.png Graphic file (type png)
 
 <use ../analysis/figures/easternEuropeNetwork.png>
 Package pdftex.def Info: ../analysis/figures/easternEuropeNetwork.png used on i
-nput line 125.
+nput line 128.
 (pdftex.def)             Requested size: 361.34999pt x 361.3491pt.
 
 
@@ -678,15 +678,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Here is how much of TeX's memory you used:
  15820 strings out of 493089
  343093 string characters out of 6134842
- 408026 words of memory out of 5000000
+ 409026 words of memory out of 5000000
  18968 multiletter control sequences out of 15000+600000
  9227 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,76p,422b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,76p,437b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on finalProjectProposal.pdf (2 pages, 2339106 bytes).
+Output written on finalProjectProposal.pdf (2 pages, 2339206 bytes).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream
