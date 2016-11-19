@@ -5,6 +5,7 @@
 
 import networkx as nx
 import pandas as pd
+import re
 import os
 
 #helper functions
@@ -24,17 +25,19 @@ def createNode(nodeRow):
     #helper that creates information for given node row
     nodeID = nodeRow["node_id"]
     nodeDict = dict(zip(list(nodeRow.index),list(nodeRow)))
-    nodeDict = {"countryCode" : nodeDict["country_codes"]}
-    return (nodeID,nodeDict)
+    #then clean keys
+    cleanedNodeDict = {} #we will add to this
+    for key in nodeDict:
+        value = nodeDict[key]
+        newKey = re.sub("_","",key)
+        cleanedNodeDict[newKey] = value
+    print cleanedNodeDict
+    return (nodeID,cleanedNodeDict)
 
 def addEntities(givenNet,entityFilename):
     #helper that adds entities to the given network
     entityFrame = pd.read_csv(entityFilename)
-    entityFrame = entityFrame[(entityFrame["country_codes"] == "UKR") |
-                              (entityFrame["country_codes"] == "RUS") |
-                              (entityFrame["country_codes"] == "POL") |
-                              (entityFrame["country_codes"] == "PAN") |
-                              (entityFrame["country_codes"] == "BHS")]
+    entityFrame = entityFrame[entityFrame["country_codes"] == "USA"]
     #get entity type
     entityFileList = entityFilename.split(os.sep)
     entityType = entityFileList[len(entityFileList) - 1]
