@@ -25,14 +25,32 @@ def createNode(nodeRow):
     #helper that creates information for given node row
     nodeID = nodeRow["node_id"]
     nodeDict = dict(zip(list(nodeRow.index),list(nodeRow)))
+    #drop one component that is not as relevant
+    nodeDict.pop("node_id")
     #then clean keys
     cleanedNodeDict = {} #we will add to this
     for key in nodeDict:
         value = nodeDict[key]
         newKey = re.sub("_","",key)
         cleanedNodeDict[newKey] = value
-    print cleanedNodeDict
     return (nodeID,cleanedNodeDict)
+
+def getEdgeTup(edgeRow):
+    #helper that gets our edge row into tuple format
+    fromNodeID = edgeRow["node_1"]
+    toNodeID = edgeRow["node_2"]
+    #then make edge dictionary
+    edgeDict = dict(zip(list(edgeRow.index),list(edgeRow)))
+    #remove non-relevant components
+    edgeDict.pop("node_1")
+    edgeDict.pop("node_2")
+    #then clean keys
+    cleanedEdgeDict = {} #we will add to this
+    for key in edgeDict:
+        value = edgeDict[key]
+        newKey = re.sub("_","",key)
+        cleanedEdgeDict[newKey] = value
+    return (fromNodeID,toNodeID,cleanedEdgeDict)
 
 def addEntities(givenNet,entityFilename):
     #helper that adds entities to the given network
@@ -53,7 +71,6 @@ def addEdges(givenNet,edgeFilename):
                           (edgeFrame["node_2"].isin(givenNet.nodes()))]
     print edgeFrame.shape
     #then get nodes
-    getEdgeTup = lambda s : (s["node_1"],s["node_2"])
     edgeTupleList = list(edgeFrame.apply(getEdgeTup,axis = 1))
     givenNet.add_edges_from(edgeTupleList)
 
@@ -74,5 +91,5 @@ def buildNetwork(csvDir,exportFilename):
 if __name__ == "__main__":
     #get entity name list
     csvDir = "../data/raw/csvFiles"
-    exportFilename = "../data/processed/easternEuropeNetwork.gml"
+    exportFilename = "../data/processed/usaNetwork.gml"
     buildNetwork(csvDir,exportFilename)
