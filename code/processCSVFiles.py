@@ -55,7 +55,6 @@ def getEdgeTup(edgeRow):
 def addEntities(givenNet,entityFilename):
     #helper that adds entities to the given network
     entityFrame = pd.read_csv(entityFilename)
-    entityFrame = entityFrame[entityFrame["country_codes"] == "USA"]
     #get entity type
     entityFileList = entityFilename.split(os.sep)
     entityType = entityFileList[len(entityFileList) - 1]
@@ -67,8 +66,6 @@ def addEntities(givenNet,entityFilename):
 def addEdges(givenNet,edgeFilename):
     #helper that adds edges to given network
     edgeFrame = pd.read_csv(edgeFilename)
-    edgeFrame = edgeFrame[(edgeFrame["node_1"].isin(givenNet.nodes())) &
-                          (edgeFrame["node_2"].isin(givenNet.nodes()))]
     print edgeFrame.shape
     #then get nodes
     edgeTupleList = list(edgeFrame.apply(getEdgeTup,axis = 1))
