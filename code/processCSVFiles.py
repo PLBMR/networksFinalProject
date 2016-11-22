@@ -56,7 +56,6 @@ def getEdgeTup(edgeRow):
 def addEntities(givenNet,entityFilename):
     #helper that adds entities to the given network
     entityFrame = pd.read_csv(entityFilename)
-    entityFrame = entityFrame[entityFrame["country_codes"] == "USA"]
     #get entity type
     entityFileList = entityFilename.split(os.sep)
     entityType = entityFileList[len(entityFileList) - 1]
@@ -68,8 +67,6 @@ def addEntities(givenNet,entityFilename):
 def addEdges(givenNet,edgeFilename):
     #helper that adds edges to given network
     edgeFrame = pd.read_csv(edgeFilename)
-    edgeFrame = edgeFrame[(edgeFrame["node_1"].isin(givenNet.nodes())) &
-                          (edgeFrame["node_2"].isin(givenNet.nodes()))]
     print edgeFrame.shape
     #then get nodes
     edgeTupleList = list(edgeFrame.apply(getEdgeTup,axis = 1))
@@ -77,7 +74,7 @@ def addEdges(givenNet,edgeFilename):
 
 def buildNetwork(csvDir,exportFilename):
     #function that performs the process of building our network
-    givenNet = nx.Graph()
+    givenNet = nx.DiGraph()
     #get list of entities and our edges
     (edgeFilename,entityFilenameList) = getEdgesAndEntityFilenames(csvDir)
     #then add all entities
@@ -92,5 +89,5 @@ def buildNetwork(csvDir,exportFilename):
 if __name__ == "__main__":
     #get entity name list
     csvDir = "../data/raw/csvFiles"
-    exportFilename = "../data/processed/usaNetwork.pkl"
+    exportFilename = "../data/processed/fullNetwork.pkl"
     buildNetwork(csvDir,exportFilename)
