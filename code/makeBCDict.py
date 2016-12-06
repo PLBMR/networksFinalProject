@@ -12,6 +12,6 @@ import networkx as nx
 #then the general process
 
 mainNetwork = nx.read_gpickle("../data/processed/doesBusinessWith.pkl")
-numNodesConsidered = 90 #for sampling purposes
+numNodesConsidered = 120 #for sampling purposes
 bcDict = nx.betweenness_centrality(mainNetwork,k = numNodesConsidered)
-cpkl.dump(bcDict,open("../data/processed/newBCDict.pkl","wb"))
+cpkl.dump(bcDict,open("../data/processed/robustBCDict.pkl","wb"))
