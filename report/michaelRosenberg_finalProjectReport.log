@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 DEC 2016 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 DEC 2016 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -647,19 +647,19 @@ e
 <figures/figure1.png, id=4, 1027.84pt x 1027.84pt>
 File: figures/figure1.png Graphic file (type png)
  <use figures/figure1.png>
-Package pdftex.def Info: figures/figure1.png used on input line 96.
+Package pdftex.def Info: figures/figure1.png used on input line 108.
 (pdftex.def)             Requested size: 361.34999pt x 361.3491pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 100.
+LaTeX Font Info:    Try loading font information for U+msa on input line 112.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+LaTeX Font Info:    Try loading font information for U+msb on input line 112.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 100.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 112.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -674,16 +674,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Here is how much of TeX's memory you used:
  15820 strings out of 493089
  343103 string characters out of 6134842
- 406024 words of memory out of 5000000
+ 407024 words of memory out of 5000000
  18968 multiletter control sequences out of 15000+600000
  9227 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,76p,437b,251s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,76p,437b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/l
 ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on michaelRosenberg_finalProjectReport.pdf (2 pages, 568107 byte
+Output written on michaelRosenberg_finalProjectReport.pdf (2 pages, 569140 byte
 s).
 PDF statistics:
  29 PDF objects out of 1000 (max. 8388607)
