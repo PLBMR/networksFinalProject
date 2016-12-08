@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 DEC 2016 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 DEC 2016 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -563,38 +563,73 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2011/07/11 v1.3 Centers the not symbol horizontally (HO)
 )
-\c@questionCounter=\count120
-\c@partCounter=\count121
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count120
+\float@exts=\toks39
+\float@box=\box60
+\@float@everytoks=\toks40
+\@floatcapt=\box61
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count121
+\Gm@cntv=\count122
+\c@Gm@tempcnt=\count123
+\Gm@bindingoffset=\dimen168
+\Gm@wd@mp=\dimen169
+\Gm@odd@mp=\dimen170
+\Gm@even@mp=\dimen171
+\Gm@layoutwidth=\dimen172
+\Gm@layoutheight=\dimen173
+\Gm@layouthoffset=\dimen174
+\Gm@layoutvoffset=\dimen175
+\Gm@dimlist=\toks41
+)
+\c@questionCounter=\count124
+\c@partCounter=\count125
 
 (./michaelRosenberg_finalProjectReport.aux)
 \openout1 = `michaelRosenberg_finalProjectReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen168
-\scratchbox=\box60
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen169
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count126
+\scratchdimen=\dimen176
+\scratchbox=\box62
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen177
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks43
 ) ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -603,10 +638,6 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -644,50 +675,132 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<figures/figure1.png, id=4, 1027.84pt x 1027.84pt>
-File: figures/figure1.png Graphic file (type png)
- <use figures/figure1.png>
-Package pdftex.def Info: figures/figure1.png used on input line 108.
-(pdftex.def)             Requested size: 361.34999pt x 361.3491pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 112.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-36.135pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 112.
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 112.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 128.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[1
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+ [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./figures/figure1.png>] (./michaelRosenberg_finalProjectReport.aux) ) 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+
+<figures/figure1.png, id=21, 1027.84pt x 1027.84pt>
+File: figures/figure1.png Graphic file (type png)
+ <use figures/figure1.png>
+Package pdftex.def Info: figures/figure1.png used on input line 320.
+(pdftex.def)             Requested size: 216.81pt x 216.80946pt.
+
+<figures/figure2.png, id=23, 361.35pt x 361.35pt>
+File: figures/figure2.png Graphic file (type png)
+ <use figures/figure2.png>
+Package pdftex.def Info: figures/figure2.png used on input line 329.
+(pdftex.def)             Requested size: 216.81pt x 216.81168pt.
+
+<figures/figure3.png, id=24, 361.35pt x 361.35pt>
+File: figures/figure3.png Graphic file (type png)
+ <use figures/figure3.png>
+Package pdftex.def Info: figures/figure3.png used on input line 340.
+(pdftex.def)             Requested size: 216.81pt x 216.81168pt.
+
+<figures/figure4.png, id=25, 361.35pt x 361.35pt>
+File: figures/figure4.png Graphic file (type png)
+ <use figures/figure4.png>
+Package pdftex.def Info: figures/figure4.png used on input line 346.
+(pdftex.def)             Requested size: 216.81pt x 216.81168pt.
+
+[4 <./figures/figure1.png> <./figures/figure2.png>]
+<figures/figure5.png, id=31, 361.35pt x 361.35pt>
+File: figures/figure5.png Graphic file (type png)
+ <use figures/figure5.png>
+Package pdftex.def Info: figures/figure5.png used on input line 357.
+(pdftex.def)             Requested size: 216.81pt x 216.81168pt.
+
+<figures/figure6.png, id=32, 361.35pt x 361.35pt>
+File: figures/figure6.png Graphic file (type png)
+ <use figures/figure6.png>
+Package pdftex.def Info: figures/figure6.png used on input line 364.
+(pdftex.def)             Requested size: 216.81pt x 216.81168pt.
+
+<figures/figure7.png, id=33, 361.35pt x 361.35pt>
+File: figures/figure7.png Graphic file (type png)
+ <use figures/figure7.png>
+Package pdftex.def Info: figures/figure7.png used on input line 373.
+(pdftex.def)             Requested size: 216.81pt x 216.81168pt.
+
+[5 <./figures/figure3.png> <./figures/figure4.png> <./figures/figure5.png> <./f
+igures/figure6.png>] [6 <./figures/figure7.png>]
+(./michaelRosenberg_finalProjectReport.aux) ) 
 Here is how much of TeX's memory you used:
- 15820 strings out of 493089
- 343103 string characters out of 6134842
- 407024 words of memory out of 5000000
- 18968 multiletter control sequences out of 15000+600000
- 9227 words of font info for 36 fonts, out of 8000000 for 9000
+ 16415 strings out of 493089
+ 351977 string characters out of 6134842
+ 425765 words of memory out of 5000000
+ 19539 multiletter control sequences out of 15000+600000
+ 10140 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,76p,437b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on michaelRosenberg_finalProjectReport.pdf (2 pages, 569140 byte
+ 55i,8n,76p,437b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on michaelRosenberg_finalProjectReport.pdf (6 pages, 714643 byte
 s).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
