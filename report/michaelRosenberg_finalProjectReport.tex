@@ -45,7 +45,7 @@
 \newcommand{\myname}{Michael Rosenberg}
 \newcommand{\myandrew}{mmrosenb@andrew.cmu.edu}
 \newcommand{\mycourse}{73-449: Social, Economic, and Information Networks}
-\newcommand{\myhwname}{| Final Project Report}
+\newcommand{\myhwname}{| Tax Havens : Network Effects and Policy Interventions}
 \newcommand{\myrecitation}{Anderson, Section A}
 \newcommand{\myteammates}{}
 \newcommand{\Z}{\mathds{Z}}
@@ -190,129 +190,134 @@ of this network.
 
 \subsubsection{Summary Statistics}
 
-The network itself has around $724000$ nodes and around $910000$ edges. This
-unfortunately suggested to me that some of the network measures I wanted to
-calculate would be too computationally expensive for me to develop using simple
-methods, and so I would need to consider certain estimation methods for those
+The network has around $724000$ nodes and around $910000$ edges. Unfortunately,
+this suggests that some of the network measures we should be
+calculate would be too computationally expensive for me to find using simple
+methods, and so we would need to use estimation methods for certain
 network measures. Upon looking at the distribution of leak sources for my nodes
 (see Figure 2), I see that most of my agents were found via the Panama Papers,
-with still a substantial amount coming from the Bahamas Leaks and the Offshore
-Leaks. We see that a really small portion of our agents are intermediaries
+but there is still a substantial amount
+coming from the Bahamas Leaks and the Offshore Leaks. 
+We see that a really small portion of our agents are intermediaries
 (see Figure 3), which is why many of the network measures we see for
-intermediares are surprising given their small representation in the network.
+intermediaries will be surprising given their small representation in the 
+network (see Network Measures).
 In terms of countries and territories represented in the network (see Figure 4),
-we see that some of the expected tax havens are frequent in our dataset, such
+we see that some of the typical tax havens are common in our dataset, such
 as Hong Kong (HKG), the British Virgin Islands (VGB), and Switzerland (CHE).
 Interestingly, we see that about $10\%$ of our agents are from non-identifiable
-countries/territories (XXX), which suggests that it may be useful to use the
+countries/territories (XXX). For future research, it may be useful to use the
 structure of the network to infer the countries of these agents.
 
 \subsubsection{Network Measures}
 
-Interestingly, intermediaries have relatively high degree when compared to
+Intermediaries have relatively high degree when compared to
 other agents in the network (see Figure 5), which is surprising given their
 small representation in the network (see Summary Statistics). This suggests that
-intermediaries do direct business with many agents, which may lend some power
-to intermediaries in terms of direct interaction. Due to the large nature of
+intermediaries have many direct busineess partners, which may lend some power
+to intermediaries in terms of available clientele. Due to the large size of
 the network (see Summary Statistics), I had to find a computationally reasonable
-way to compute betweenness centrality for our network. I ended up using an
-estimation method that sampled a couple hundred nodes in our network for
+way to compute betweenness centrality for our agents. I ended up using an
+estimation method that sampled around $350$ nodes in our network for
 computing paths for betweenness centrality. Unfortunately, we see that
 betweenness centrality is generally low across all agent types (see Figure 6).
-This either suggests that our estimation was not strong, or that intermediaries
-may not be essential for connecting distant communities in the network.
+This either suggests that our estimation was not effective or that 
+intermediaries may not be essential for connecting distant communities in the 
+network.
 
 For studying embeddedness, I realized that calculating average link embeddedness
 for a node would be computationally difficult given that some nodes have
-extremely high degree (see Figure 5). Thus, I felt a simpler method for
+extremely high degree (see Figure 5). Thus, I felt that a simpler method for
 calculating some measure of closure for a node was to study the clustering
 coefficients of our agents. Interestingly, we see that all intermediaries have
 a clustering coefficient of $0$ (see Figure 6). This suggests that
 intermediaries are in extremely fragile parts of the network, since their
 high degree can disconnect many agents if they are removed from the network. We
 also see that intermediaries are only adjacent to entities in this network. I
-would argue that this is partially a data quality issue, since most
+would argue that this is potentially a data quality issue, since most
 intermediaries transact with entities under the request of a legal or financial
-client. That being said, considering methods on how to address this data quality
+client. That being said, addressing this data quality
 issue is slightly out of the scope of this project, and may be an avenue of
 future research (see Discussion).
 
 \subsubsection{Policy Interventions}
 
-Given the fragile nature of the current placement of intermediaries in the
-network, I started to consider certain interventions in which one could
-dismantle the network by taking advantage of its fragility.
+Given the fragility in the placement of intermediaries in the
+network, I started to consider certain interventions to dismantle the network 
+by taking advantage of this fragility.
 
 At first, I considered a scenario in which the governments of the world ban
 intermediaries from interacting with offshore entities. This essentially removes
 all intermediaries from the network. This intervention shatters our network into
-$287000$ components, with the largest connected component only contains $22\%$
+$287000$ components, and the largest connected component contains only $22\%$
 of agents in the remaining network. The average degree of this network also
 shifts from $2.5$ to $1.4$, which suggests that on average most agents have
 fewer direct business connections than before. When we consider how extremely
 disconnected our network becomes after this policy intervention, it is
 apparent that if we prevent a large number of financial and legal intermediaries
-from engaging with entities, we can weaken the ability of agents to interact
-with many offshore tax havens. However, given the fact that it seems unrealistic
-for all governments across the world to commit to a ban like this, I thought
+from engaging with entities, we can weaken the number of accessible
+entities for agents in the network. However, given the fact that it seems 
+unrealistic
+for all governments across the world to commit to this ban, I thought
 that it would be important to consider some more realistic scenarios.
 
 I then considered a scenario where China decides to prevent its domestic
 intermediaries from interacting with offshore entities. This removes only
 Chinese intermediaries from the network, which is about $5\%$ of available
-intermediaries. I considered this policy because China would seem to be the
-only well-represented country in this network that would have the power to
-extremely regulate its financial and legal sectors.
+intermediaries. I considered this policy because China is the
+only country in this network that has a history of extensive market
+intervention in the financial sector.
 This intervention shatters the network into $2300$ components, but $99\%$ of
 the remaining agents are within the largest connected component and the average
 degree in the network stays about the same. This suggests that while the
-Chinese ban can dismantle the connectivity of certain parts of the network,
-this ban alone does not reduce the connectivity of the network enough to reduce
-the accessibility of offshore entities. This also suggests that this problem
-can't be tackled by the policies of only one country.
+Chinese ban can damage the connectivity of certain parts of the network,
+this ban does not reduce the accessibility of many tax havens in the network. 
+It is apparent that this problem can't be tackled by the policies of only 
+one country.
 
 I then considered a policy scenario where the US and the UK engage in light
 regulation on the number of intermediary-entity connections per intermediary
 in their country. This policy scenario caps the degree of US and UK
-intermediaries at $5$, and so any intermediary in these countries that has over
-$5$ adjacencies must choose which adjacencies to keep at random. This scenario
-is primarily meant to see the effect of a small number of developed countries
-engaging in light regulation of their financial intermediaries. This shatters
+intermediaries at $5.$ Any intermediary in these countries that has over
+$5$ adjacencies must choose which adjacencies to keep at random. I considered
+this policy because there is a history of cooperation among developed countries
+to commit to light regulation in each economy. This policy shatters
 our network into $12000$ components, but $97\%$ of the remaining nodes are
 within the largest connected component and the average degree only shifts
-slightly from $2.45$ to $2.5$. Thus, while the multi-country effort seems to 
-have damaged some parts of the Atlantic tax haven, it did not do enough
-damage to the East Asian part of the network to be an extremely effective
-policy.
+slightly from $2.45$ to $2.5$. While the multi-country effort seems to 
+have damaged some parts of the Atlantic part of the network, it was not very
+effective due to its inability to damage the East Asian part of the network.
 
 \subsection{Discussion and Future Research}
 
 It seems as though intermediaries have social capital in this network from
-having many direct business connections with entities and being placed in very
-fragile parts of the network. While these aspects of intermediaries
+having many direct business connections with entities and being placed in 
+very unclustered groups of entities. While these aspects of intermediaries
 would suggest that their social capital cannot be characterized by closure, it
 is uncertain whether intermediaries could have social capital characterized
 by brokerage since our betweenness measures for intermediaries are weak (see
-Analysis, Network Measures). After attempting several different types of
+Analysis, Network Measures). After testing several different
 policy interventions, it seems as though the most effective methods for
-dismantling the network was to remove a meaningful number of intermediaries
-across several countries in the network. Thus, the best direction for 
-policymaking on breaking up this network would be to form a strong 
+breaking apart the network was to remove a meaningful number of intermediaries
+across many geographical regions in the network. Thus, the best direction for 
+policymaking on dismantling this network would be to form a strong 
 multinational coalition for regulating intermediary-entity relationships.
 
 There are several possible avenues of future research. One avenue is to study
 this dataset with more computationally efficient algorithms. If we had more
 resources for computing power on this large graph, many of our calculations on
 embeddedness and betweenness centrality could be more accurately measured and
-not simply estimated. Another avenue is to study the structure of the network
+not just estimated. Another avenue of research
+is to study the structure of the network
 to infer what relationships exist between intermediaries and officers. Given
-the peculiarity of the lack of relationships between intermediaries and officers
+the peculiarity of the lack of adjacencies between intermediaries and officers
 on this network, it may be useful to use certain statistical methods to infer
 likely connections between intermediaries and their likely clients. Finally,
-another avenue of research would be to build slightly more robust policy
-interventions. If we were to add some level of randomness to the policy
-decisions using Monte Carlo simulations, we may be able to make more meaningful
-suggestions on how to dismantle the tax haven network.
+another avenue of research would be to test policy interventions in a more
+robust manner. If we were to add some level of randomness to policy
+decisions using Monte Carlo simulations, we may be able to make more 
+probabilistic statements on the effect of governmental choices and
+create more meaningful suggestions on how to weaken the tax haven network.
 
 \begin{figure}[H]
 \centering
@@ -328,8 +333,7 @@ suggestions on how to dismantle the tax haven network.
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=3in]{figures/figure2.png}
-  \caption{Distribution of Leak Source for nodes in the canonical
-                    network.}
+  \caption{Distribution of Leak Source for nodes in the canonical network.}
   \label{fig2}
 \end{minipage}
 \end{figure}
@@ -345,8 +349,10 @@ suggestions on how to dismantle the tax haven network.
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=3in]{figures/figure4.png}
-  \caption{Top Ten Country Codes (For both Countries and Territories) for
-                nodes in our canonical network.}
+  \caption{Top Ten Country Codes for nodes in our canonical network.
+            These codes include both countries and territories of certain
+            countries. The country code ``XXX'' represents a not identified
+            country code.}
   \label{fig4}
 \end{minipage}
 \end{figure}
@@ -356,15 +362,15 @@ suggestions on how to dismantle the tax haven network.
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=3in]{figures/figure5.png}
-  \caption{Distribution of $\log(Degree)$
-        by Agent Type in the canonical network.}
+  \caption{Distribution of $\log(Degree)$ by Agent Type in the canonical 
+            network.}
   \label{fig5}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=3in]{figures/figure6.png}
-  \caption{Distribution of betweenness centrality by Agent Type in the 
-        canonical network.}
+  \caption{Distribution of betweenness centrality by Agent Type in the canonical
+            network.}
   \label{fig6}
 \end{minipage}
 \end{figure}
